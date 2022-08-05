@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.ScrollViewPage"
+             Title="ScrollView">
+
+    <ScrollView>
+        <StackLayout Padding="10,10,10,0">
+            <Label FontSize="20" Text="微軟Bug再不看就沒機會 神人用Windows 11讓IE瀏覽器「成功復活」" TextColor="#6495ED"/>
+            <Label FontSize="14" Text="2022-08-04 17:57 聯合新聞網／ 綜合報導" TextColor="#6495ED"/>
+            <BoxView HeightRequest="1" Color="Black" Margin="10,0,10,0"/>
+            <Label FontSize="18" Padding="0,0,0,25"
+                   Text="微軟Internet Explorer（IE）瀏覽器問世27年後，正式於今（2022）年6月15日起全面停用，不但微軟不再提供服務，許多網頁也都不支援IE瀏覽器。不過，目前還是有方法可以讓Wondows 11再次開啟IE瀏覽器。"/>
+            <Label FontSize="18" Padding="0,0,0,25"
+                   Text="微軟禁止Wondows 11運行IE瀏覽器，提早為結束IE瀏覽器做準備，但國外有一名推特網友XenoPanther想出了一種可以讓Windows 11運行IE瀏覽器的方法。"/>
+            <Label FontSize="18" Padding="0,0,0,25"
+                   Text="根據《Windows Central》報導，XenoPanther透過推特分享在Windows 11召喚啟動IE瀏覽器的方法，只要在「開始」中搜尋「網際網路選項」，選擇「程式」選項後進入「管理附加元件」，就可以找到「深入了解工具列與延伸模組」，據XenoPanther所稱，只要跟著上述步驟即可找到啟動IE瀏覽器的入口，但不知其原理為何能成功啟動IE瀏覽器。"/>
+            <Label FontSize="18" Padding="0,0,0,25"
+                   Text="雖然微軟禁止Windows 11運行IE瀏覽器，如今網友卻發現了可強制執行IE的方法，外媒猜測微軟恐怕很快就會在下一次更新時消除網友發現的奇特辦法。"/>
+            <Label FontSize="18" Padding="0,0,0,25"
+                   Text="IE瀏覽器退役後，微軟緊接著安排Microsoft Edge瀏覽器上陣，它在市場上占據10.64%使用量、排名第二，遠遠落後於Google推出的Chorme瀏覽器，其市場占有率為66.93%。"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

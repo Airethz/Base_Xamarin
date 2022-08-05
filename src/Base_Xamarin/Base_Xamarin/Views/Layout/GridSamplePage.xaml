@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.GridSamplePage"
+             Title="Grid">
+
+    <StackLayout Margin="10,5,10,5">
+        <Label Text="Row：" FontSize="24"/>
+        <Grid HeightRequest="400">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" BackgroundColor="#81b29a">
+                <Label Text="0 高度固定 50" FontSize="20" TextColor="Black"/>
+            </Grid>
+            <Grid Grid.Row="1" BackgroundColor="#dad7cd">
+                <StackLayout>
+                    <Label Text="1 高度依內容調整" FontSize="20" TextColor="Black"/>
+                    <Label Text="." FontSize="20" TextColor="Black"/>
+                    <Label Text="." FontSize="20" TextColor="Black"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Row="2" BackgroundColor="#2a9d8f">
+                <StackLayout>
+                    <Label Text="2 分配Grid剩下的高度" FontSize="20" TextColor="Black"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+
+        <Label Text="Column：" FontSize="24"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" BackgroundColor="#98c1d9">
+                <StackLayout>
+                    <Label Text="0" FontSize="20" TextColor="Black"/>
+                    <Label Text="固定寬度150" FontSize="20" TextColor="Black"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Column="1" BackgroundColor="#ea526f">
+                <StackLayout>
+                    <Label Text="1" FontSize="20" TextColor="Black"/>
+                    <Label Text="寬度依內容調整" FontSize="20" TextColor="Black"/>
+                </StackLayout>
+            </Grid>
+            <Grid Grid.Column="2" BackgroundColor="#bfc0c0">
+                <StackLayout>
+                    <Label Text="2" FontSize="20" TextColor="Black"/>
+                    <Label Text="分配Grid剩下的寬度" FontSize="20" TextColor="Black"/>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </StackLayout>
+</ContentPage>

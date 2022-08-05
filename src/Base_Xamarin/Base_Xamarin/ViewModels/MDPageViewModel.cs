@@ -10,28 +10,20 @@ namespace Base_Xamarin.ViewModels
     using Prism.Events;
     using Prism.Navigation;
     using Prism.Services;
-    public class HomePageViewModel : INotifyPropertyChanged, INavigationAware
+    public class MDPageViewModel : INotifyPropertyChanged, INavigationAware
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
         private readonly INavigationService navigationService;
-        public DelegateCommand<string> GoPageCommand { get; set; }
+        public DelegateCommand GoHomeCommand { get; set; }
 
-        public HomePageViewModel(INavigationService navigationService)
+        public MDPageViewModel(INavigationService navigationService)
         {
             this.navigationService = navigationService;
 
-            GoPageCommand = new DelegateCommand<string>(async x =>
+            GoHomeCommand = new DelegateCommand(async () =>
             {
-                switch (x)
-                {
-                    case "Grid":
-                        await navigationService.NavigateAsync("GridSamplePage");
-                        break;
-                    case "ScrollView":
-                        await navigationService.NavigateAsync("ScrollViewPage");
-                        break;
-                }
+                await navigationService.NavigateAsync("MDPage/NavigationPage/HomePage");
             });
         }
 

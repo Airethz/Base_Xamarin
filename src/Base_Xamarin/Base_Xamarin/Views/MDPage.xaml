@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:prism="http://prismlibrary.com"
+                  prism:ViewModelLocator.AutowireViewModel="True"
+                  x:Class="Base_Xamarin.Views.MDPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <ScrollView>
+                <StackLayout WidthRequest="150">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="150"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid Grid.Row="0" BackgroundColor="DarkGray" Padding="10,5,10,0">
+                            <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                <Frame BackgroundColor="Transparent" BorderColor="White">
+                                    <Label Text="Xamarin.Forms"
+                               TextColor="White" FontSize="26"/>
+                                </Frame>
+                            </StackLayout>
+                            <Label Text="Prism 版本：2.4.1" HorizontalOptions="EndAndExpand" VerticalOptions="EndAndExpand"
+                                   TextColor="White" FontSize="16"/>
+                        </Grid>
+                        <Grid Grid.Row="1" VerticalOptions="CenterAndExpand">
+                            <Button Text="首頁" HorizontalOptions="FillAndExpand" Command="{Binding GoHomeCommand}"
+                                    FontSize="26" TextColor="White" BackgroundColor="#81b29a"/>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>

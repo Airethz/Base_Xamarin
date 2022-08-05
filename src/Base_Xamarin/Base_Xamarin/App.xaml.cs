@@ -19,7 +19,7 @@ namespace Base_Xamarin
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/HomePage");
+            await NavigationService.NavigateAsync("MDPage/NavigationPage/HomePage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -29,6 +29,9 @@ namespace Base_Xamarin
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
+            containerRegistry.RegisterForNavigation<GridSamplePage, GridSamplePageViewModel>();
+            containerRegistry.RegisterForNavigation<ScrollViewPage, ScrollViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<MDPage, MDPageViewModel>();
         }
     }
 }

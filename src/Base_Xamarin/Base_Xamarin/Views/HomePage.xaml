@@ -5,13 +5,21 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Base_Xamarin.Views.HomePage"
              Title="首頁">
-    <StackLayout Margin="10,10,5,10">
-        <Label Text="Layout" FontSize="22"/>
-        <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
-            <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
-            <Button Text="Grid範例" Command="{Binding GoPageCommand}" CommandParameter="Grid範例" Margin="5,0,0,0"
-                FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
+    
+    <ScrollView>
+        <StackLayout Margin="10,10,5,10">
+            <Label Text="Layout" FontSize="22"/>
+            <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                <Button Text="ScrollView" Command="{Binding GoPageCommand}" CommandParameter="ScrollView" Margin="5,0,0,0"
+            FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                <Button Text="Grid" Command="{Binding GoPageCommand}" CommandParameter="Grid" Margin="5,0,0,0"
+            FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
+            </StackLayout>
         </StackLayout>
-        
-    </StackLayout>
+    </ScrollView>
 </ContentPage>
