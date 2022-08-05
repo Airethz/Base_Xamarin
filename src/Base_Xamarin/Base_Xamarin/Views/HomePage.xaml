@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.HomePage"
+             Title="首頁">
+    <StackLayout Margin="10,10,5,10">
+        <Label Text="Layout" FontSize="22"/>
+        <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+            <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+            <Button Text="Grid範例" Command="{Binding GoPageCommand}" CommandParameter="Grid範例" Margin="5,0,0,0"
+                FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
+        </StackLayout>
+        
+    </StackLayout>
+</ContentPage>
