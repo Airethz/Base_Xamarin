@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.CollectionViewPage"
+             Title="CollectionView">
+
+    <StackLayout Margin="10,5,10,10">
+        <Label Text="智商前十名的狗" FontSize="22" HorizontalOptions="CenterAndExpand"/>
+        <CollectionView ItemsSource="{Binding Dogs}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding .}" FontSize="18"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

@@ -29,9 +29,16 @@ namespace Base_Xamarin
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<HomePage, HomePageViewModel>();
-            containerRegistry.RegisterForNavigation<GridSamplePage, GridSamplePageViewModel>();
             containerRegistry.RegisterForNavigation<ScrollViewPage, ScrollViewPageViewModel>();
             containerRegistry.RegisterForNavigation<MDPage, MDPageViewModel>();
+            containerRegistry.RegisterForNavigation<GridPage, GridPageViewModel>();
+            containerRegistry.RegisterForNavigation<ListViewPage, ListViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<CollectionViewPage, CollectionViewPageViewModel>();
+            containerRegistry.RegisterForNavigation<StackLayoutPage, StackLayoutPageViewModel>();
+            containerRegistry.RegisterForNavigation<PropertyChangedPage, PropertyChangedPageViewModel>();
+            containerRegistry.RegisterForNavigation<UserDialogPage, UserDialogPageViewModel>();
+            containerRegistry.RegisterForNavigation<ImagePage, ImagePageViewModel>();
+            containerRegistry.RegisterForNavigation<LocationPage, LocationPageViewModel>();
         }
     }
 }

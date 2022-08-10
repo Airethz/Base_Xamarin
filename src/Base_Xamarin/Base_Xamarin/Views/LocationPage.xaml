@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.LocationPage"
+             Title="位置">
+    
+    <ScrollView>
+        <StackLayout Margin="10,5,10,5">
+            <Label Text="HorizontalOptions：" FontSize="24"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Center1" HorizontalOptions="Center" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+                <Label Text="Center2" HorizontalOptions="CenterAndExpand" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="End1" HorizontalOptions="End" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+                <Label Text="End2" HorizontalOptions="EndAndExpand" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Fill1" HorizontalOptions="Fill" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+                <Label Text="Fill2" HorizontalOptions="FillAndExpand" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Start1" HorizontalOptions="Start" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+                <Label Text="Start2" HorizontalOptions="StartAndExpand" FontSize="22" BackgroundColor="#735d78" TextColor="White"/>
+            </StackLayout>
+
+            <Label Text="VerticalOptions：" FontSize="24"/>
+            <StackLayout BackgroundColor="LightGray" HeightRequest="150">
+                <Label Text="Center1" VerticalOptions="Center" FontSize="22" BackgroundColor="#89b0ae" TextColor="White"/>
+                <Label Text="Center2" VerticalOptions="CenterAndExpand" FontSize="22" BackgroundColor="#89b0ae" TextColor="White"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="LightGray" HeightRequest="150">
+                <Label Text="End1" VerticalOptions="End" FontSize="22" BackgroundColor="#9a8c98" TextColor="White"/>
+                <Label Text="End2" VerticalOptions="EndAndExpand" FontSize="22" BackgroundColor="#9a8c98" TextColor="White"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="LightGray" HeightRequest="150">
+                <Label Text="Fill1" VerticalOptions="Fill" FontSize="22" BackgroundColor="#89b0ae" TextColor="White"/>
+                <Label Text="Fill2" VerticalOptions="FillAndExpand" FontSize="22" BackgroundColor="#89b0ae" TextColor="White"/>
+            </StackLayout>
+            <StackLayout BackgroundColor="LightGray" HeightRequest="150">
+                <Label Text="Start1" VerticalOptions="Start" FontSize="22" BackgroundColor="#9a8c98" TextColor="White"/>
+                <Label Text="Start2" VerticalOptions="StartAndExpand" FontSize="22" BackgroundColor="#9a8c98" TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

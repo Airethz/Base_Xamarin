@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="Base_Xamarin.Views.GridSamplePage"
+             x:Class="Base_Xamarin.Views.GridPage"
              Title="Grid">
 
     <StackLayout Margin="10,5,10,5">
@@ -58,4 +58,5 @@
             </Grid>
         </Grid>
     </StackLayout>
+  
 </ContentPage>

@@ -2,9 +2,9 @@
 
 namespace Base_Xamarin.Views
 {
-    public partial class GridSamplePage : ContentPage
+    public partial class PropertyChangedPage : ContentPage
     {
-        public GridSamplePage()
+        public PropertyChangedPage()
         {
             InitializeComponent();
         }

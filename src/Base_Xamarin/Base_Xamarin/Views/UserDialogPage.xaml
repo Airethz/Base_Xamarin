@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.UserDialogPage"
+             Title="User Dialog">
+
+    <StackLayout Margin="10,5,10,5">
+        <Button Text="Loading 顯示5秒" FontSize="18" BackgroundColor="#457b9d" TextColor="White"
+                Command="{Binding ShowDialogCommand}"/>
+    </StackLayout>
+</ContentPage>

@@ -5,21 +5,88 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="Base_Xamarin.Views.HomePage"
              Title="首頁">
-    
-    <ScrollView>
-        <StackLayout Margin="10,10,5,10">
-            <Label Text="Layout" FontSize="22"/>
-            <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
-                <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
-                <Button Text="ScrollView" Command="{Binding GoPageCommand}" CommandParameter="ScrollView" Margin="5,0,0,0"
-            FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
+
+    <Grid>
+        <Image Source="Background.png" Aspect="AspectFill"/>
+        <ScrollView>
+            <StackLayout Margin="10,10,5,10">
+                <StackLayout Margin="0,0,0,20">
+                    <Label Text="Page" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Label Text="Navigation Page：" Margin="10,0,0,0" VerticalOptions="CenterAndExpand"
+                       FontSize="16" TextColor="#457b9d"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Label Text="Content Page：HomePage(當前頁)" Margin="10,0,0,0" VerticalOptions="CenterAndExpand"
+                       FontSize="16" TextColor="#457b9d"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Label Text="MasterDetail Page：MDPage" Margin="10,0,0,0" VerticalOptions="CenterAndExpand"
+                       FontSize="16" TextColor="#457b9d"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Margin="0,0,0,20">
+                    <Label Text="Layout" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="Scroll View" Command="{Binding GoPageCommand}" CommandParameter="ScrollView" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="Stack Layout" Command="{Binding GoPageCommand}" CommandParameter="StackLayout" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="Grid" Command="{Binding GoPageCommand}" CommandParameter="Grid" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout Margin="0,0,0,20">
+                    <Label Text="集合View" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="Collection View" Command="{Binding GoPageCommand}" CommandParameter="CollectionView" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="List View" Command="{Binding GoPageCommand}" CommandParameter="ListView" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <StackLayout Margin="0,0,0,20">
+                    <Label Text="其他" FontSize="20"/>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="圖片" Command="{Binding GoPageCommand}" CommandParameter="圖片" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="位置" Command="{Binding GoPageCommand}" CommandParameter="位置" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="Property Changed" Command="{Binding GoPageCommand}" CommandParameter="PropertyChanged" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
+                        <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
+                        <Button Text="User Dialog" Command="{Binding GoPageCommand}" CommandParameter="UserDialog" Margin="5,0,0,0"
+                            FontSize="16" BackgroundColor="#457b9d" TextColor="White"/>
+                    </StackLayout>
+                </StackLayout>
             </StackLayout>
-            
-            <StackLayout Orientation="Horizontal" Margin="10,0,0,0">
-                <BoxView WidthRequest="1" BackgroundColor="#457b9d"/>
-                <Button Text="Grid" Command="{Binding GoPageCommand}" CommandParameter="Grid" Margin="5,0,0,0"
-            FontSize="18" BackgroundColor="#457b9d" TextColor="White"/>
-            </StackLayout>
-        </StackLayout>
-    </ScrollView>
+        </ScrollView>
+    </Grid>
 </ContentPage>

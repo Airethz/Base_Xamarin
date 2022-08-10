@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="Base_Xamarin.Views.ListViewPage"
+             Title="ListView">
+    
+    <StackLayout Margin="10,0,10,0">
+        <Label Text="2022年 程式語言排行" FontSize="22" HorizontalOptions="CenterAndExpand"/>
+        <Label Text="資料來源：TIOBE" FontSize="16" HorizontalOptions="EndAndExpand"/>
+
+        <ListView ItemsSource="{Binding LanguageData}" SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="40"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="70"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Grid Grid.Column="0">
+                                <Label Text="{Binding Rank}" VerticalOptions="CenterAndExpand"
+                                   FontSize="18"/>
+                            </Grid>
+                            <Grid Grid.Column="1">
+                                <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand"
+                                   FontSize="18"/>
+                            </Grid>
+                            <Grid Grid.Column="2">
+                                <Label Text="{Binding Ratings}" VerticalOptions="CenterAndExpand"
+                                   FontSize="18"/>
+                            </Grid>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
